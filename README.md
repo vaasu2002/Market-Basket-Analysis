@@ -16,4 +16,5 @@
 2)  CONFIDENCE   -    Probability of a event given probability of other event.
 
 **SUPPORT** - Probability of person buying phone in an online website.
+
 **CONFIDENCE** - Probability of person buying screenguard if person buys phone.
