@@ -5,7 +5,7 @@
 
 **Works on Sequential Frequent Patters**
 
-- Example - When we buy laptop only it recommends us to buy anti-virus and other accessories like mouse, cooling pad etc to buy with it. But when we just buy anti-virus it does not recommends us to bu laptop for it. 
+- Example - When we buy laptop only it recommends us to buy anti-virus and other accessories like mouse, cooling pad etc to buy with it. But when we just buy anti-virus it does not recommends us to buy laptop for it. 
 
 **Primary Objective -**
 1) Improve effectiveness of marketing
