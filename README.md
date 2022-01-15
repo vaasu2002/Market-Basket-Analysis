@@ -4,7 +4,12 @@
 from apyori import apriori
 ```
 ```
-RelationRecord(items=frozenset({'liver loaf', 'fruit/vegetable juice'}), support=0.00040098910646260775, ordered_statistics=[OrderedStatistic(items_base=frozenset({'liver loaf'}), items_add=frozenset({'fruit/vegetable juice'}), confidence=0.12, lift=3.5276227897838903)])
+items=frozenset({'sugar', 'spread cheese'}), 
+support=0.00040098910646260775, 
+ordered_statistics=[OrderedStatistic(items_base=frozenset({'spread cheese'}), 
+items_add=frozenset({'sugar'}), 
+confidence=0.06, 
+lift=3.3878490566037733)
 ```
 
 - Market Basket Analysis is one of the key techniques used by large retailers to uncover associations between items. It works by looking for combinations of items that occur together frequently in transactions. To put it another way, it allows retailers to identify relationships between the items that people buy.
