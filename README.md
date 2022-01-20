@@ -6,8 +6,20 @@ from mlxtend.frequent_patterns import apriori
 from mlxtend.frequent_patterns import association_rules
 ```
 ```ruby
-products = df['itemDescription'].unique()
-print(f"Number of products:- {len(products)}")
+data2 = data1.groupby(['memberNumber','Date'])[products[:]].sum()
+data2 = data2.reset_index()[products]
+
+def naming(data):
+    for i in products:
+        if data[i]>0:
+            data[i]=i
+    return data
+
+data2 = data2.apply(naming,axis=1)
+
+newdata = data2.values
+newdata = [i[i!=0].tolist() for i in newdata if i[i!=0].tolist()]
+newdata
 ```
 
 - Market Basket Analysis is one of the key techniques used by large retailers to uncover associations between items. It works by looking for combinations of items that occur together frequently in transactions. To put it another way, it allows retailers to identify relationships between the items that people buy.
