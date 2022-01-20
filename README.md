@@ -19,6 +19,7 @@ data2 = data2.apply(naming,axis=1)
 
 newdata = data2.values
 newdata = [i[i!=0].tolist() for i in newdata if i[i!=0].tolist()]
+# ARRAY OF ITEMS BOUGHT TOGETHER
 newdata
 ```
 
