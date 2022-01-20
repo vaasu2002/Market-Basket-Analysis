@@ -7,8 +7,8 @@ from mlxtend.frequent_patterns import association_rules
 ```
 ```ruby
 plt.figure(figsize=(8,8))
-df.itemDescription.value_counts().tail(10).sort_values().plot.bar()
-plt.title('Top 10 least Selling items')
+df.itemDescription.value_counts().head(10).plot.bar()
+plt.title('Top 10 selling products')
 ```
 
 - Market Basket Analysis is one of the key techniques used by large retailers to uncover associations between items. It works by looking for combinations of items that occur together frequently in transactions. To put it another way, it allows retailers to identify relationships between the items that people buy.
